@@ -9,7 +9,7 @@ CREATE TABLE burgers
     PRIMARY KEY (id)
 );
 
-USE burgers_db;
+USE burgers_db
 
 
 
