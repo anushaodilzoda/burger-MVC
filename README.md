@@ -49,7 +49,7 @@ node server.js
 # Technologies
 The app's database schema and seeds were created in the MySQL workbench, and the coding was done in VS Code using node.js, JavaScript, handlebars.js, and Express. A custom ORM was also utilized. CSS, Bootstrap and Google Fonts were used for the styling of the app.
 
-# Directory structure
+# Directory structure.
 
 All the recommended files and directories from the steps above should look like the following structure:
 
