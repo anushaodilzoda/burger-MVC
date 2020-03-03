@@ -41,7 +41,7 @@ router.put("/api/burgers/:id", function(request, response){
         if (result.changedRows == 0){
             return response.status(404).end();
         } else {
-            // console.log(condition);
+            // console.log(condition)
             response.status(200).end();
         }
     });
