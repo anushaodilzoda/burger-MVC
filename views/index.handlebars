@@ -1,0 +1,63 @@
+
+<div class="container">
+
+  
+    <img src="/assets/img/favicon.jpg" width="85%" height="5%" /></h1>
+
+  <div class="row colorStrip">
+    <div class="col-12"></div>
+  </div>
+
+  <div class="row ">
+    <h3> Add a new burger of your choice! </h3>
+    <form id="addBurger" class="create-form">
+      <div class="form-group">
+        <input type="text" id="addBurger" name="burger_name">
+        <button type="submit"> Add Burger</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="row none">
+    <div class="col-4 section rounded">
+      <h4 class="text-center">Burgers to Devour</h4>
+
+      <ul>
+        {{#each burgers}}
+        {{#unless this.devoured}}
+        <li>{{this.burger_name}}
+
+          <button id="devourBtn" data-value="true" id="check" class="btn btn-warning btn-sm" data-id={{this.id}}>Devour</button>
+
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+
+
+       <div class="col-1 section rounded">
+  
+    </div>
+
+
+    <div class="col-4 section rounded">
+      <h4 class="text-center">Devoured Burgers</h4>
+
+      <ul>
+        {{#each burgers}}
+        {{#if this.devoured}}
+        <li>{{this.burger_name}}
+          <button id="deleteBtn" data-value="false" data-id={{this.id}}>Delete</button>
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-4"></div>
+
+
+  </div>
+</div>
