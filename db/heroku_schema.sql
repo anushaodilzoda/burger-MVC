@@ -12,7 +12,7 @@ CREATE TABLE burgers(
 USE yc5669fe5eih641g;
 
 
-INSERT INTO burgers (burger_name)
+INSERT INTO burgers (burger_name);
 VALUES  ("Beer Cheeseburger"),
         ("Bacon Cheeseburger"),
         ("Cajun Chicken Burger"),
